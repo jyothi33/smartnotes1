@@ -14,7 +14,7 @@ const Home = () => {
     const dispatch = useDispatch();
     useEffect(() => {
       dispatch(getNotesFunction())
-    }, []);
+    }, [dispatch]);
 
   return (
     <Box style={{display : 'flex', width: '100%'}}>
