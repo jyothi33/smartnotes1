@@ -60,7 +60,7 @@ const NewNote = () => {
         setAddNote(changedNote);
       });
     }
-  }, [quill]);
+  }, [quill, addNote, quillRef]);
 
   return (
     <ClickAwayListener onClickAway={handleClickAway}>
